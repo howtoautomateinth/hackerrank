@@ -1,2 +1,2 @@
-# hackerrank
-JUST FOR FUN
+# Hackerrank
+JUST FOR FUN in JS Language
