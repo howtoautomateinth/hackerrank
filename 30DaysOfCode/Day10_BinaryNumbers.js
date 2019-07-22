@@ -1,0 +1,1 @@
+console.log(Math.max(...Number(n).toString(2).split(/0+/).map(e => e.length)));
