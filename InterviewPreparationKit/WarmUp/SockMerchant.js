@@ -1,14 +1,12 @@
 // Complete the sockMerchant function below.
 function sockMerchant(n, ar) {
-    let numberOfPairs = [];
-    const uniqueSock = [...new Set(ar)]
-    for (let i in uniqueSock) {
-        const totalSock = ar.filter((elem) =>
-            uniqueSock[i] == elem
-        ).length;
-        numberOfPairs.push(parseInt(totalSock / 2))
+    var totalPairs = 0;
+    ar.sort();
+    for(let i=0; i<n;i++){
+        if(ar[i] == ar[i+1]){
+                i++;
+                totalPairs++;
+           }
     }
-    return numberOfPairs.reduce((previousValue, Current, index) => {
-        return Current + previousValue
-    }, 0);
+    return totalPairs;
 }
